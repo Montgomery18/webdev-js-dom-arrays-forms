@@ -19,10 +19,16 @@
         console.info(colourBtn[i])
     }
     function chgColour(ev)
-    {
+    {     
+        for(let i=0; i<colourBtn.length; i++)
+        {
+            colourBtn[i].setAttribute("class", colourBtn[i].classList[0] + " " + colourBtn[i].classList[1]) ;
+        }
         console.dir(ev.target.classList)
         let newColour = ev.target.classList[0] + "Back";
         body.setAttribute("class", newColour);
+        ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour ) ;
+        
     }
     /*
     redBtn.addEventListener("click", function(ev){
