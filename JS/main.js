@@ -27,8 +27,7 @@
         console.dir(ev.target.classList)
         let newColour = ev.target.classList[0] + "Back";
         body.setAttribute("class", newColour);
-        ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour ) ;
-        
+        ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour);
     }
     /*
     redBtn.addEventListener("click", function(ev){
