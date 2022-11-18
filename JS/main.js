@@ -12,7 +12,7 @@
         console.dir(ev);
     }
     let colourBtn = document.querySelectorAll(".colPicker");
-    let body = document.querySelector("body");
+    let bodyElement = document.body;
     for(let i=0; i<colourBtn.length; i++)
     {
         colourBtn[i].addEventListener("click", chgColour)
@@ -26,8 +26,12 @@
         }
         console.dir(ev.target.classList)
         let newColour = ev.target.classList[0] + "Back";
-        body.setAttribute("class", newColour);
+        if(newColour === "resetback"){
+            body.setAttribute("class");
+        }
+        else{
+            body.setAttribute("class", newColour);
+        }
         ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour);
     }
-    
 })()
