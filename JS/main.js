@@ -29,18 +29,5 @@
         body.setAttribute("class", newColour);
         ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour);
     }
-    /*
-    redBtn.addEventListener("click", function(ev){
-        body.setAttribute("class", "redBack");
-    })
-    bluBtn.addEventListener("click", function(ev){
-        body.setAttribute("class", "blueBack");
-    })
-    greBtn.addEventListener("click", function(ev){
-        body.setAttribute("class", "greenBack");
-    })
-    */
-    // remBtn.addEventListener("click", function(ev){
-    //     body.removeAttribute();
-    // })
+    
 })()
