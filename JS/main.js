@@ -34,4 +34,27 @@
         }
         ev.target.setAttribute("class", ev.target.classList[0] + " " + ev.target.classList[1] + " " + newColour);
     }
+    // Image rotation
+    let myImageArray = ["test1", 123, true, "test2"];
+    console.dir(myImageArray);
+    let imageAr = ["images/view1.jpg","images/view2.jpg","images/view3.jpg","images/view4.jpg","images/view5.jpg","images/view6.jpg"]
+    let myImages = document.getElementById("myImages");
+    console.dir(imageAr);
+    let count = 0;
+    myImages.setAttribute("src", imageAr[count]);;
+
+    function chgImage(){
+        count++;
+        console.info(count);
+        if (count === imageAr.length)
+        {
+            count = 0;
+        }
+        else
+        {
+            myImages.setAttribute("src", imageAr[count]);
+        }
+    }
+    setInterval(chgImage, 4000);
+    //
 })()
