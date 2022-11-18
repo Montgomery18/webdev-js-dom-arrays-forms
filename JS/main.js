@@ -12,7 +12,7 @@
         console.dir(ev);
     }
     let colourBtn = document.querySelectorAll(".colPicker");
-    let bodyElement = document.querySelector("body");
+    let bodyElement = document.body;
     for(let i=0; i<colourBtn.length; i++)
     {
         colourBtn[i].addEventListener("click", chgColour)
